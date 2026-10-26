@@ -1,0 +1,59 @@
+{
+  "name": "dsh-medical-device-skills",
+  "version": "0.1.0",
+  "description": "MedXpert agent-skill collection (21 skills) packaged as a dsh profile bundle: NMPA / FDA / EU MDR / PMDA medical-device regulatory workflows.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "skills",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "LICENSES",
+    "NOTICE"
+  ],
+  "license": "(Apache-2.0 AND MIT)",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "agent-skills",
+    "medical-device",
+    "regulatory",
+    "nmpa",
+    "fda",
+    "mdr",
+    "pmda"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liao199/dsh-medical-device-skills.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible",
+        "0.2.1-rc.3": "compatible"
+      }
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node test/smoke.mjs"
+  }
+}

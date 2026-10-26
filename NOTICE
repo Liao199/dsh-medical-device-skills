@@ -1,0 +1,72 @@
+dsh-medxpert-skills
+===================
+
+This package redistributes the MedXpert agent-skill collection.
+
+Upstream
+--------
+Repository : https://github.com/zhaoxinghua09-cell/medxpert-skills
+Author     : 赵兴华 / Steven Zhao (China) · ORCID 0009-0001-0512-1237
+Snapshot   : main branch, 2026-10-24
+Skills     : 21 directories under skills/, copied verbatim
+
+License map
+-----------
+Per-skill `license:` declarations in the upstream snapshot:
+
+  MIT (15)            -> LICENSES/MIT.txt
+    med-reg-category-page
+    medical-device-clinical-evaluation
+    medical-device-compliance-grader
+    medical-device-intl-business
+    medical-device-label-ifu
+    medical-device-postmarket
+    medical-device-qms-gmp
+    medical-device-reg-dossier
+    medical-device-risk-management
+    medical-device-samd
+    medical-device-supplier-compliance
+    medical-device-techfile-sted
+    medxpert-l1-batch-study
+    medxpert-llm-library
+    medxpert-skill-panorama
+
+  No per-skill license (6) -> LICENSE (repository-level Apache-2.0)
+    medical-device-reg-hub
+    medxpert-brand-assets
+    medxpert-doc-toolchain
+    medxpert-kb-distribution
+    medxpert-standards
+    medxpert-vi-extension
+
+Obligations carried by this redistribution
+------------------------------------------
+- Keep both license texts (LICENSE, LICENSES/MIT.txt).
+- Keep this NOTICE and the upstream attribution (repository URL, author, date).
+- State what changed (below).
+- Do not use the upstream project names or logos to suggest endorsement: Apache
+  License 2.0 section 6 grants no trademark rights, and the upstream README
+  states that MedXpert / SynomosAI / LGD are unregistered project identifiers.
+- The wrapper code (package.json, cordis.patch.yml, lib/, test/) is released by
+  this package under Apache-2.0.
+
+Changes made by this package
+----------------------------
+- Added package.json, cordis.patch.yml, lib/index.js, test/smoke.mjs and README
+  files so the collection can be installed as a DeepSeek Harness profile bundle.
+- Skill files themselves are unmodified: frontmatter and body text are
+  byte-identical to the upstream snapshot.
+- No skill was renamed; directory names, `name:` values, descriptions and
+  bodies keep their upstream form.
+- No upstream binary asset (logo, icon, image) is redistributed.
+
+Trademarks
+----------
+MedXpert, SynomosAI and LGD are project identifiers of the upstream author. They
+are used here only to identify the origin of the content and claim no legal
+entity or registered trademark.
+
+Disclaimer
+----------
+Skill output is methodology and source navigation for professional review. It is
+not regulatory, legal or commercial advice.
