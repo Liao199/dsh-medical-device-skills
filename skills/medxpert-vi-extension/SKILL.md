@@ -5,7 +5,7 @@ displayName: "medxpert-vi-extension"
 category: "skill-ops"
 compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特别友好 ③理念文化传播+强IP；发布前由 skill-release-gate 审查"
 name: medxpert-vi-extension
-description: "基于 MedXpert 已有 VI 规范，在 Ardot 画布上快速延展 PPT 模板、知识手册封面、公众号头像/头图、X 展架/背景板、Skill 安装长图等品牌物料。何时用：在已有 MedXpert 品牌套件基础上，批量补充营销推广/分发所需的物料画板"
+description: "基于已有 VI 规范，在 Ardot 画布上快速延展 PPT 模板、知识手册封面、公众号头像/头图、X 展架/背景板、Skill 安装长图等品牌物料。何时用：在已有品牌套件基础上，批量补充营销推广/分发所需的物料画板"
 version: 1.0.0
 agent_created: true
 ---

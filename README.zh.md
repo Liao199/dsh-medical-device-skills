@@ -1,4 +1,4 @@
-# dsh-medical-device-skills
+# dsh-bhky-medical-device-skills
 
 把 [MedXpert](https://github.com/zhaoxinghua09-cell/medxpert-skills) 的 21 个 Agent Skill（医疗器械法规：NMPA / FDA / MDR / PMDA）打包成 **DeepSeek Harness（dsh）插件**，装一次，所有工作区的会话都能按需调用。
 
@@ -12,7 +12,7 @@
 ## 目录结构
 
 ```
-dsh-medical-device-skills/
+dsh-bhky-medical-device-skills/
 ├─ package.json          # dsh.bundle.patch 指向 cordis.patch.yml
 ├─ cordis.patch.yml      # bundle 层：insert 本包
 ├─ lib/index.js          # provider 实现（零依赖）
@@ -29,10 +29,10 @@ dsh-medical-device-skills/
 打开 dsh 的插件页，安装规格支持 registry 名、git 主机、tarball、`file:`/`link:` 路径：
 
 ```
-dsh-medical-device-skills                                    # 已发布到 npm 时
-github:Liao199/dsh-medical-device-skills                     # 直接吃 GitHub
-https://github.com/Liao199/dsh-medical-device-skills/archive/refs/heads/main.tar.gz
-file:C:\path\to\dsh-medical-device-skills                    # 本地开发
+dsh-bhky-medical-device-skills                                    # 已发布到 npm 时
+github:Liao199/dsh-bhky-medical-device-skills                     # 直接吃 GitHub
+https://github.com/Liao199/dsh-bhky-medical-device-skills/archive/refs/heads/main.tar.gz
+file:C:\path\to\dsh-bhky-medical-device-skills                    # 本地开发
 ```
 
 安装后 dsh 会把它作为 profile 层加载（因为包内声明了 `dsh.bundle.patch`）；未声明的包只会被当成普通依赖。
@@ -42,8 +42,8 @@ file:C:\path\to\dsh-medical-device-skills                    # 本地开发
 ```jsonc
 // ~/.dsh/profiles/desktop/package.json
 {
-  "dependencies": { "dsh-medical-device-skills": "^0.1.0" },
-  "dsh": { "profile": { "bundles": [ /* …原有… */, "dsh-medical-device-skills" ] } }
+  "dependencies": { "dsh-bhky-medical-device-skills": "^0.1.0" },
+  "dsh": { "profile": { "bundles": [ /* …原有… */, "dsh-bhky-medical-device-skills" ] } }
 }
 ```
 然后在 profile 目录执行 `pnpm install`，重启 dsh。
@@ -53,10 +53,10 @@ file:C:\path\to\dsh-medical-device-skills                    # 本地开发
 ```bash
 node test/smoke.mjs
 # ok: 21 skills, provider=medxpert-skills
-# ok: first five → med-reg-category-page, medical-device-clinical-evaluation, …
+# ok: first five → med-reg-category-page, jim-device-clinical-evaluation, …
 ```
 
-宿主内验证：新开一个会话，问「关节镜钳出口美国要 510(k) 吗」或直接说「用 medical-device-reg-hub」，技能出现在目录里即装配成功。
+宿主内验证：新开一个会话，问「关节镜钳出口美国要 510(k) 吗」或直接说「用 jim-device-reg-hub」，技能出现在目录里即装配成功。
 
 ## 与「手工放进 ~/.dsh/skills」的区别
 

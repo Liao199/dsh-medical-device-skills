@@ -5,7 +5,7 @@ category: "ai-agent"
 compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特别友好 ③理念文化传播+强IP；发布前由 skill-release-gate 审查"
 title: "MedXpert 知识分发流水线"
 name: medxpert-kb-distribution
-description: 从 MedXpert 项目知识库批量生成分发物料：知识手册（本地模型深度学习）、引流 PDF、GitHub 开源库打包、FAQ 法规引用一致性检查。当用户提到"知识手册"、"引流 PDF"、"github-kb"、"开源知识库"、"检查法规引用"、"check_faq_refs"、"分发物料"、"生成手册"时使用。
+description: 从项目知识库批量生成分发物料：知识手册（本地模型深度学习）、引流 PDF、GitHub 开源库打包、FAQ 法规引用一致性检查。当用户提到"知识手册"、"引流 PDF"、"github-kb"、"开源知识库"、"检查法规引用"、"check_faq_refs"、"分发物料"、"生成手册"时使用。
 version: 1.0.0
 agent_created: true
 ---

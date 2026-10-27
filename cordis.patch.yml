@@ -3,4 +3,4 @@
 # node_modules, exactly like dsh-context / dshmarket do.
 - insert:
     - id: medxpert-skills
-      name: 'dsh-medical-device-skills'
+      name: 'dsh-bhky-medical-device-skills'

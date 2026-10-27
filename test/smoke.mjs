@@ -25,11 +25,11 @@ assert.deepEqual(inject, ["skills"]);
 
 const listed = await registered.list();
 assert.equal(listed.length, 21);
-const candidate = listed.find((entry) => entry.name === "medical-device-reg-hub");
-assert.ok(candidate, "medical-device-reg-hub missing from list()");
+const candidate = listed.find((entry) => entry.name === "jim-device-reg-hub");
+assert.ok(candidate, "jim-device-reg-hub missing from list()");
 assert.equal(candidate.provider, "medxpert-skills");
 assert.equal(candidate.source, "custom");
-assert.ok(candidate.resourceBase.path.endsWith("medical-device-reg-hub"));
+assert.ok(candidate.resourceBase.path.endsWith("jim-device-reg-hub"));
 
 const loaded = await registered.get(candidate);
 assert.ok(loaded.content.length > 500, "body not returned");
@@ -46,4 +46,4 @@ assert.equal(quoted.description, "带引号 的描述");
 
 console.log(`ok: ${listed.length} skills, provider=${registered.name}`);
 console.log(`ok: first five → ${listed.slice(0, 5).map((entry) => entry.name).join(", ")}`);
-console.log(`ok: body bytes for medical-device-reg-hub = ${loaded.content.length}`);
+console.log(`ok: body bytes for jim-device-reg-hub = ${loaded.content.length}`);

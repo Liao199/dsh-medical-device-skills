@@ -5,7 +5,7 @@ displayName: "医械品类速查页流水线"
 compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特别友好 ③理念文化传播+强IP；发布前由 skill-release-gate 审查"
 name: med-reg-category-page
 display_name: "医械品类速查页生产流水线"
-description: 医疗器械品类注册速查页（GEO 引用资产）生产流水线：统一结构 + FAQPage JSON-LD + 免责与核验日期 + 官方源核验门。何时用：为某器械品类（骨科 / 心血管 / IVD / SaMD / 影像等）写注册速查页，或为 MedXpert 知识库新增可被 AI 引用的品类资产时。
+description: 医疗器械品类注册速查页（GEO 引用资产）生产流水线：统一结构 + FAQPage JSON-LD + 免责与核验日期 + 官方源核验门。何时用：为某器械品类（骨科 / 心血管 / IVD / SaMD / 影像等）写注册速查页，或为知识库新增可被 AI 引用的品类资产时。
 version: 1.0.0
 agent_created: true
 author: 诺声(Logos)@SynomosAI

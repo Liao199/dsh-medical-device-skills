@@ -5,7 +5,7 @@ displayName: "medxpert-brand-assets"
 category: "general"
 compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特别友好 ③理念文化传播+强IP；发布前由 skill-release-gate 审查"
 name: medxpert-brand-assets
-description: MedXpert 品牌视觉资产生产流水线（logo/头像/封面/二维码/公众号模板包/名片）。以主logo为唯一源，参数配置化驱动，多方案并行+预览总览+版本归档。触发词：生成品牌素材、做头像、做封面、做二维码、改logo、品牌素材、medxpert-brand-assets。
+description: 品牌视觉资产生产流水线（logo/头像/封面/二维码/公众号模板包/名片）。以主logo为唯一源，参数配置化驱动，多方案并行+预览总览+版本归档。触发词：生成品牌素材、做头像、做封面、做二维码、改logo、品牌素材、brand-assets。
 agent_created: true
 ---
 
