@@ -4,7 +4,7 @@ slug: medxpert-skill-panorama
 displayName: "medxpert-skill-panorama"
 compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特别友好 ③理念文化传播+强IP；发布前由 skill-release-gate 审查"
 name: medxpert-skill-panorama
-description: "将 WorkBuddy Skill 生成 MedXpert + 公司 VI 风格的高清三角度全景图（价值/服务/能力）及评测类雷达图，并按 plugin 编号命名。何时用：需要给新 Skill 补上全景图上架物料"
+description: "将 Skill 生成公司 VI 风格的高清三角度全景图（价值/服务/能力）及评测类雷达图，并按 plugin 编号命名。何时用：需要给新 Skill 补上全景图上架物料"
 author: 潘布达(Buda Pan)@SynomosAI
 category: tooling
 platforms: [workbuddy]

@@ -7,7 +7,7 @@ compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特�
 name: medxpert-standards
 display_name: "MedXpert医械标准库导航"
 version: 1.0.0
-description: 把 MedXpert-RA-Knowledge 医械法规标准知识库装进会话上下文——提供版本判定前置、来源等级话术、缺口标记规则，让没有配置 MCP 的会话也能正确用库。
+description: 把医械法规标准知识库装进会话上下文——提供版本判定前置、来源等级话术、缺口标记规则，让没有配置 MCP 的会话也能正确用库。
 author: 标准官@MedXpert
 ---
 

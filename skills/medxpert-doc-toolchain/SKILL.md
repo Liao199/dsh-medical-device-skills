@@ -5,7 +5,7 @@ displayName: "medxpert-doc-toolchain"
 category: "ai-agent"
 compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特别友好 ③理念文化传播+强IP；发布前由 skill-release-gate 审查"
 name: medxpert-doc-toolchain
-description: MedXpert（美达信医疗）名片风格文档模板工具链。覆盖文档全生命周期：模板生成（T02/T03/T04/三版纸张）→ 收尾流水线（水印/暗纹/动态溯源/AI友好/徽章/解锁）→ 导出（PDF/DOCX）→ 台账编号 → 审批流 → 电子签名 → 中英对照 → 乐享托管。触发词：文档模板、程序文件、doc_templates、收尾流水线、doc_finish、文档台账、doc_ledger、审批流、doc_approval、电子签名、doc_sign、中英对照、doc_bilingual、生成模板、文控体系。
+description: 名片风格文档模板工具链。覆盖文档全生命周期：模板生成（T02/T03/T04/三版纸张）→ 收尾流水线（水印/暗纹/动态溯源/AI友好/徽章/解锁）→ 导出（PDF/DOCX）→ 台账编号 → 审批流 → 电子签名 → 中英对照 → 乐享托管。触发词：文档模板、程序文件、doc_templates、收尾流水线、doc_finish、文档台账、doc_ledger、审批流、doc_approval、电子签名、doc_sign、中英对照、doc_bilingual、生成模板、文控体系。
 agent_created: true
 ---
 

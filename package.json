@@ -1,5 +1,5 @@
 {
-  "name": "dsh-medical-device-skills",
+  "name": "dsh-bhky-medical-device-skills",
   "version": "0.1.0",
   "description": "MedXpert agent-skill collection (21 skills) packaged as a dsh profile bundle: NMPA / FDA / EU MDR / PMDA medical-device regulatory workflows.",
   "type": "module",
@@ -34,7 +34,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Liao199/dsh-medical-device-skills.git"
+    "url": "git+https://github.com/Liao199/dsh-bhky-medical-device-skills.git"
   },
   "dsh": {
     "bundle": {

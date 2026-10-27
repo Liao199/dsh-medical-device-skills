@@ -1,4 +1,4 @@
-# dsh-medical-device-skills
+# dsh-bhky-medical-device-skills
 
 Package the [MedXpert](https://github.com/zhaoxinghua09-cell/medxpert-skills) agent-skill
 collection (21 skills for NMPA / FDA / EU MDR / PMDA medical-device regulatory work) as a
@@ -29,9 +29,9 @@ LICENSE            # Apache-2.0, inherited from upstream
 The plugin page accepts registry names, git hosts, tarballs and `file:` / `link:` paths:
 
 ```
-dsh-medical-device-skills                                     # once published to npm
-github:Liao199/dsh-medical-device-skills                      # straight from GitHub
-file:C:\path\to\dsh-medical-device-skills                     # local development
+dsh-bhky-medical-device-skills                                     # once published to npm
+github:Liao199/dsh-bhky-medical-device-skills                      # straight from GitHub
+file:C:\path\to\dsh-bhky-medical-device-skills                     # local development
 ```
 
 Because the package declares `dsh.bundle.patch`, dsh loads it as a profile layer. A package
@@ -48,7 +48,7 @@ node test/smoke.mjs
 ```
 
 In the host: ask a medical-device regulatory question, or name a skill explicitly
-(e.g. `medical-device-reg-hub`); it appearing in the catalog means the bundle is mounted.
+(e.g. `jim-device-reg-hub`); it appearing in the catalog means the bundle is mounted.
 
 ## Plugin vs. copying into `~/.dsh/skills`
 
