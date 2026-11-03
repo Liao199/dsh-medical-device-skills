@@ -1,10 +1,10 @@
 ---
-title: "jim-device-qms-gmp"
-slug: jim-device-qms-gmp
+title: "jim-13485-gmp"
+slug: jim-13485-gmp
 compliance_review: "待核验：上架三铁律 ①国家/国际合规 ②AI特别友好 ③理念文化传播+强IP；发布前由 skill-release-gate 审查"
-name: jim-device-qms-gmp
+name: jim-13485-gmp
 displayName: 医械质量体系GMP文档
-description: "生成与核查医疗器械 GMP / ISO 13485 质量体系文档：质量手册、程序文件框架、工艺验证（IQ/OQ/PQ）、再处理验证（复用器械清洗-消毒-灭菌-包装）、灭菌确认。覆盖体系核查准备。生成后建议用 jim-device-compliance-grader 的 C5 维度自测。何时用：\"质量手册/程序文件怎么搭\" / \"ISO 13485 体系\""
+description: "生成与核查医疗器械 GMP / ISO 13485 质量体系文档：质量手册、程序文件框架、工艺验证（IQ/OQ/PQ）、再处理验证、灭菌确认和体系核查准备。何时用：jim-13485-gmp。"
 version: 0.1.0
 author: 注册老炮@MedXpert
 category: 文档处理
@@ -19,6 +19,7 @@ platforms: ["workbuddy"]
 质量体系是注册与生产的底座。本技能提供 GMP/ISO 13485 体系文档的**框架生成与核查清单**，重点覆盖工艺验证、复用器械再处理验证、灭菌确认——这几项是体系核查（飞检/稽核）的高频必查点。
 
 ## 触发场景
+- jim-13485-gmp
 - "质量手册/程序文件怎么搭" / "ISO 13485 体系"
 - "工艺验证 IQ/OQ/PQ" / "再处理验证"
 - "灭菌确认（EO/辐照/湿热）" / "体系核查准备"
@@ -31,18 +32,13 @@ platforms: ["workbuddy"]
 4. **再处理验证（复用器械重点）**：清洗 → 消毒 → 灭菌 → 包装 全流程验证，确认可重复达到无菌保证水平(SAL)。
 5. **灭菌确认**：按 ISO 11135（EO）/11137（辐照）/17665（湿热）做灭菌过程确认；无菌屏障系统依 ISO 11607。
 6. **体系核查准备**：对照核查表自查，形成缺陷整改台账。
-7. **自测闭环**：用 `jim-device-compliance-grader` 的 **C5 质量体系/GMP·ISO 13485**维度打分。
+7. **自测闭环**：按 C5 质量体系/GMP·ISO 13485 维度打分。
 
 ## 要点速查
 - 工艺验证不是一次性：关键工序变更、设备迁移须再确认。
 - 复用外科器械 IFU 的再处理程序须与再处理验证结论一致（呼应 C2）。
 - 灭菌确认状态须如实体现在标签/IFU（呼应 C2、C4）。
 - 风险管理（ISO 14971）贯穿体系，与 C7 维度衔接。
-
-## 关联技能
-- 查规则/官方链接：`jim-device-reg-hub`（references/ GMP质量体系与验证枢纽、灭菌包装验证枢纽、风险管理枢纽）
-- 标签/再处理：`jim-device-label-ifu`
-- 评测自检：`jim-device-compliance-grader`
 
 ## 注意事项
 - 不构成法规意见；以监管机构最新发布为准。

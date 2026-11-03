@@ -6,11 +6,11 @@
     },
     {
       "path": "SKILL.md",
-      "sha256": "913545f33aff344c3d4581551abc49380f1f2aab7ba014ed14a4f017c72bbc76"
+      "sha256": "2abc8217fc73f544e13858a694e65e994d1ae8ad94c988aa0bbb8ce499aecc87"
     }
   ],
   "generated_utc": "2026-08-26T06:08:12Z",
   "license": "MIT",
-  "manifest_sha256": "aee841ae51e63b8cab4e193028e17a73006900154ab0b0691d1a276a6263b043",
-  "skill": "jim-device-reg-dossier"
+  "manifest_sha256": "337e616c644ef3cdab04caaa0efeef3caa23931b9be32a2d942f9b8e8f9230a3",
+  "skill": "jim-13485-gmp"
 }

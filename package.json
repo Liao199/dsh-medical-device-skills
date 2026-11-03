@@ -1,7 +1,7 @@
 {
   "name": "dsh-bhky-medical-device-skills",
-  "version": "0.1.0",
-  "description": "MedXpert agent-skill collection (21 skills) packaged as a dsh profile bundle: NMPA / FDA / EU MDR / PMDA medical-device regulatory workflows.",
+  "version": "0.2.0",
+  "description": "ISO 13485 / GMP medical-device quality-system skill packaged as a dsh profile bundle. Trigger: jim-13485-gmp.",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

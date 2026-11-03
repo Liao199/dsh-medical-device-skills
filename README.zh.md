@@ -1,6 +1,6 @@
 # dsh-bhky-medical-device-skills
 
-把 [MedXpert](https://github.com/zhaoxinghua09-cell/medxpert-skills) 的 21 个 Agent Skill（医疗器械法规：NMPA / FDA / MDR / PMDA）打包成 **DeepSeek Harness（dsh）插件**，装一次，所有工作区的会话都能按需调用。
+把医疗器械 GMP / ISO 13485 质量体系技能 `jim-13485-gmp` 打包成 **DeepSeek Harness（dsh）插件**。触发词是 `jim-13485-gmp`，装一次，所有工作区的会话都能按需调用。
 
 ## 它做了什么
 
@@ -16,7 +16,7 @@ dsh-bhky-medical-device-skills/
 ├─ package.json          # dsh.bundle.patch 指向 cordis.patch.yml
 ├─ cordis.patch.yml      # bundle 层：insert 本包
 ├─ lib/index.js          # provider 实现（零依赖）
-├─ skills/               # 21 个技能，每个一个目录 + SKILL.md
+├─ skills/               # 1 个技能：jim-13485-gmp/SKILL.md
 ├─ test/smoke.mjs        # 无宿主自检
 ├─ NOTICE                # 上游署名
 └─ LICENSE               # Apache-2.0（继承上游）
@@ -52,11 +52,11 @@ file:C:\path\to\dsh-bhky-medical-device-skills                    # 本地开发
 
 ```bash
 node test/smoke.mjs
-# ok: 21 skills, provider=medxpert-skills
-# ok: first five → med-reg-category-page, jim-device-clinical-evaluation, …
+# ok: 1 skills, provider=medxpert-skills
+# ok: first five → jim-13485-gmp
 ```
 
-宿主内验证：新开一个会话，问「关节镜钳出口美国要 510(k) 吗」或直接说「用 jim-device-reg-hub」，技能出现在目录里即装配成功。
+宿主内验证：新开一个会话，问「ISO 13485 质量手册怎么搭」或直接说「用 jim-13485-gmp」，技能出现在目录里即装配成功。
 
 ## 与「手工放进 ~/.dsh/skills」的区别
 
@@ -66,7 +66,7 @@ node test/smoke.mjs
 | 升级 | 改版本号重装 | 覆盖目录 |
 | 生效范围 | 该 profile 的所有工作区 | 该用户所有工作区 |
 | 目录来源标记 | `source: custom`，provider 名为 `medxpert-skills` | `source: user-dsh` |
-| 冲突 | 同名技能可能与手工目录重复 → **切换时先删掉 `~/.dsh/skills` 下的 21 个目录** | — |
+| 冲突 | 同名技能可能与手工目录重复 → **切换时先删掉 `~/.dsh/skills` 下的旧副本** | — |
 
 ## 迁移到插件时清掉手工副本
 
@@ -82,8 +82,7 @@ Get-ChildItem "$env:USERPROFILE\.dsh\skills" -Directory |
 
 | 范围 | 许可 | 文本 |
 |---|---|---|
-| 15 个在 frontmatter 声明 `license: MIT` 的技能 | MIT | `LICENSES/MIT.txt` |
-| 6 个未声明单技能许可的技能 | Apache-2.0（仓库级） | `LICENSE` |
+| 保留的 `jim-13485-gmp`（frontmatter 声明 `license: MIT`） | MIT | `LICENSES/MIT.txt` |
 | 外壳代码（package.json / cordis.patch.yml / lib / test） | Apache-2.0 | `LICENSE` |
 
 `NOTICE` 记录了来源、快照日期、逐技能许可归属、改动清单与商标说明。上游 README 末尾另有一句“禁止商用转载”，与 Apache-2.0 条款冲突；本包按许可文件条款分发，商用前请先向上游取得书面确认。

@@ -1,8 +1,8 @@
 # dsh-bhky-medical-device-skills
 
-Package the [MedXpert](https://github.com/zhaoxinghua09-cell/medxpert-skills) agent-skill
-collection (21 skills for NMPA / FDA / EU MDR / PMDA medical-device regulatory work) as a
-**DeepSeek Harness (dsh)** profile bundle.
+Package one medical-device quality-system skill, `jim-13485-gmp`, as a
+**DeepSeek Harness (dsh)** profile bundle. It covers GMP / ISO 13485 quality manuals,
+process validation, reprocessing validation, sterilization, and audit preparation.
 
 ## What it does
 
@@ -18,7 +18,7 @@ collection (21 skills for NMPA / FDA / EU MDR / PMDA medical-device regulatory w
 package.json       # dsh.bundle.patch → cordis.patch.yml
 cordis.patch.yml   # bundle layer: inserts this package
 lib/index.js       # zero-dependency provider
-skills/            # 21 skill directories, each with SKILL.md
+skills/            # one skill directory: jim-13485-gmp/SKILL.md
 test/smoke.mjs     # host-free self-check
 NOTICE             # upstream attribution
 LICENSE            # Apache-2.0, inherited from upstream
@@ -44,11 +44,11 @@ package name to `dsh.profile.bundles`, run `pnpm install`, restart dsh.
 
 ```bash
 node test/smoke.mjs
-# ok: 21 skills, provider=medxpert-skills
+# ok: 1 skills, provider=medxpert-skills
 ```
 
-In the host: ask a medical-device regulatory question, or name a skill explicitly
-(e.g. `jim-device-reg-hub`); it appearing in the catalog means the bundle is mounted.
+In the host: ask a GMP / ISO 13485 question, or name the skill explicitly
+(`jim-13485-gmp`); it appearing in the catalog means the bundle is mounted.
 
 ## Plugin vs. copying into `~/.dsh/skills`
 
