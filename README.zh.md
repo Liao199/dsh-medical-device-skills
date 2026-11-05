@@ -1,6 +1,6 @@
 # dsh-bhky-medical-device-skills
 
-把医疗器械 GMP / ISO 13485 质量体系技能 `jim-13485-gmp` 打包成 **DeepSeek Harness（dsh）插件**。触发词是 `jim-13485-gmp`，装一次，所有工作区的会话都能按需调用。
+把 5 个医疗器械技能打包成 **DeepSeek Harness（dsh）插件**：`jim-13485-gmp`（GMP / ISO 13485）、`jim-sted-mdr-50k`（国际注册 TD，显示名 jim-STED-MDR-50K）、`jim-reg-kb`（显示名 jim-法规-知识库）、`jim-bartender-ifu`（标签与 IFU）、`jim-checkshelf`（合规自检）。装一次，所有工作区的会话都能按需调用。
 
 ## 它做了什么
 
@@ -16,7 +16,7 @@ dsh-bhky-medical-device-skills/
 ├─ package.json          # dsh.bundle.patch 指向 cordis.patch.yml
 ├─ cordis.patch.yml      # bundle 层：insert 本包
 ├─ lib/index.js          # provider 实现（零依赖）
-├─ skills/               # 1 个技能：jim-13485-gmp/SKILL.md
+├─ skills/               # 5 个技能，每个一个目录 + SKILL.md
 ├─ test/smoke.mjs        # 无宿主自检
 ├─ NOTICE                # 上游署名
 └─ LICENSE               # Apache-2.0（继承上游）
@@ -52,8 +52,8 @@ file:C:\path\to\dsh-bhky-medical-device-skills                    # 本地开发
 
 ```bash
 node test/smoke.mjs
-# ok: 1 skills, provider=medxpert-skills
-# ok: first five → jim-13485-gmp
+# ok: 5 skills, provider=medxpert-skills
+# ok: first five → jim-13485-gmp, jim-bartender-ifu, jim-checkshelf, jim-reg-kb, jim-sted-mdr-50k
 ```
 
 宿主内验证：新开一个会话，问「ISO 13485 质量手册怎么搭」或直接说「用 jim-13485-gmp」，技能出现在目录里即装配成功。

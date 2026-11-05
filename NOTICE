@@ -8,8 +8,9 @@ Upstream
 Repository : https://github.com/zhaoxinghua09-cell/medxpert-skills
 Author     : 赵兴华 / Steven Zhao (China) · ORCID 0009-0001-0512-1237
 Snapshot   : main branch, 2026-10-24
-Skills     : originally 21 directories; this package now keeps one,
-             skills/jim-13485-gmp (formerly medical-device-qms-gmp)
+Skills     : originally 21 directories; this package now keeps five:
+             jim-13485-gmp, jim-sted-mdr-50k, jim-reg-kb,
+             jim-bartender-ifu, jim-checkshelf
 
 License map
 -----------
@@ -55,11 +56,13 @@ Changes made by this package
 ----------------------------
 - Added package.json, cordis.patch.yml, lib/index.js, test/smoke.mjs and README
   files so the collection can be installed as a DeepSeek Harness profile bundle.
-- Only the GMP / ISO 13485 skill is redistributed. The other 20 upstream
-  skills were removed from this package.
-- That skill was renamed from medical-device-qms-gmp to jim-13485-gmp:
-  directory name, `name:` value, and trigger text were changed, and references
-  to skills no longer shipped here were removed.
+- Five skills are redistributed. The other upstream skills were removed.
+- Renames: medical-device-qms-gmp → jim-13485-gmp;
+  medical-device-techfile-sted → jim-sted-mdr-50k;
+  medical-device-reg-hub → jim-reg-kb;
+  medical-device-label-ifu → jim-bartender-ifu;
+  medical-device-compliance-grader → jim-checkshelf.
+  Directory names, `name:` values, and trigger text were changed.
 - The original full collection remains in the local backup taken before this
   change.
 - No upstream binary asset (logo, icon, image) is redistributed.

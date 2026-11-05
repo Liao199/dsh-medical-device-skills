@@ -1,8 +1,12 @@
 # dsh-bhky-medical-device-skills
 
-Package one medical-device quality-system skill, `jim-13485-gmp`, as a
-**DeepSeek Harness (dsh)** profile bundle. It covers GMP / ISO 13485 quality manuals,
-process validation, reprocessing validation, sterilization, and audit preparation.
+Package five medical-device skills as a **DeepSeek Harness (dsh)** profile bundle:
+
+- `jim-13485-gmp` — GMP / ISO 13485 quality-system documents
+- `jim-sted-mdr-50k` — international technical documentation (STED, MDR, 510(k)); display name `jim-STED-MDR-50K`
+- `jim-reg-kb` — regulatory knowledge base; display name `jim-法规-知识库`
+- `jim-bartender-ifu` — labeling and IFU
+- `jim-checkshelf` — compliance self-check scorecard
 
 ## What it does
 
@@ -18,7 +22,7 @@ process validation, reprocessing validation, sterilization, and audit preparatio
 package.json       # dsh.bundle.patch → cordis.patch.yml
 cordis.patch.yml   # bundle layer: inserts this package
 lib/index.js       # zero-dependency provider
-skills/            # one skill directory: jim-13485-gmp/SKILL.md
+skills/            # five skill directories, each with SKILL.md
 test/smoke.mjs     # host-free self-check
 NOTICE             # upstream attribution
 LICENSE            # Apache-2.0, inherited from upstream
@@ -44,7 +48,7 @@ package name to `dsh.profile.bundles`, run `pnpm install`, restart dsh.
 
 ```bash
 node test/smoke.mjs
-# ok: 1 skills, provider=medxpert-skills
+# ok: 5 skills, provider=medxpert-skills
 ```
 
 In the host: ask a GMP / ISO 13485 question, or name the skill explicitly

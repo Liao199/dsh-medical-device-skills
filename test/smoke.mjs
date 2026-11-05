@@ -6,7 +6,7 @@ import assert from "node:assert/strict";
 import { apply, discover, name, inject, parseSkillSource } from "../lib/index.js";
 
 const skills = await discover();
-assert.equal(skills.length, 1, `expected 1 skill, parsed ${skills.length}`);
+assert.equal(skills.length, 5, `expected 5 skills, parsed ${skills.length}`);
 assert.ok(skills.every((skill) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(skill.name)), "a name is not kebab-case");
 assert.ok(skills.every((skill) => skill.description.length > 20), "a description is too short");
 assert.equal(new Set(skills.map((skill) => skill.name)).size, skills.length, "duplicate skill names");
@@ -24,7 +24,7 @@ assert.equal(name, "medxpert-skills");
 assert.deepEqual(inject, ["skills"]);
 
 const listed = await registered.list();
-assert.equal(listed.length, 1);
+assert.equal(listed.length, 5);
 const candidate = listed.find((entry) => entry.name === "jim-13485-gmp");
 assert.ok(candidate, "jim-13485-gmp missing from list()");
 assert.equal(candidate.provider, "medxpert-skills");
